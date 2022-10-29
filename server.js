@@ -1,6 +1,8 @@
 // Dependencies
 const express = require('express');
 const path = require('path');
+//const api
+
 
 
 const PORT = process.env.PORT || 3000;
@@ -10,9 +12,10 @@ const app = express();
 
 //Allows the express app to run static files
 app.use(express.static('public'));
+//use api
 
 
-// Data
+// Data: stored in db.json file
 
 // Routes
 //GET route for landing page
