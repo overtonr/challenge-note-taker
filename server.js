@@ -1,7 +1,7 @@
 // Dependencies
 const express = require('express');
 const path = require('path');
-const api = require('./public/assets/js/index.js');
+
 
 const PORT = process.env.PORT || 3000;
 
@@ -11,8 +11,6 @@ const app = express();
 //Allows the express app to run static files
 app.use(express.static('public'));
 
-//
-app.use('/api', api);
 
 // Data
 
