@@ -4,9 +4,10 @@ const path = require('path');
 
 const PORT = process.env.PORT || 3000;
 
+//Allows server to use express
 const app = express();
 
-//Allows the express app to run
+//Allows the express app to run static files
 app.use(express.static('public'));
 
 // Data
